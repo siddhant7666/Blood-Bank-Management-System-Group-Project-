@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <title> About Us</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+    <style>
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+header{
+
+    width: 100%;
+    /* height: 1000vh; */
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1;
+
+}
+
+header nav{
+    width: 100%;
+    text-align: center;
+    background-color: #374147;
+
+}
+
+header nav .menu{
+
+    list-style: none;
+
+}
+
+header nav .menu li{
+
+    display: inline-block;
+    position: relative;
+
+} 
+
+header nav .menu li:first-child{
+
+    margin-left: 0;
+
+}
+
+
+
+header nav .menu li a{
+
+    text-decoration: none;
+    color: #fff;
+    padding: 25px 35px;
+    font-weight: 600;
+    display: block;
+    text-transform: capitalize;
+    transition: 0.3s;
+
+}
+
+header nav .menu li a:hover{
+
+    background-color: #ff652f;
+    color: #fff;
+}
+
+header nav .menu li.main-sub-menu a::after{
+
+    content: '\ebc0';
+    font-family: boxicons;
+    position: absolute;
+    top: 27px;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+header nav .menu li.main-sub-menu-1 a::after{
+
+    color: #838383;
+    right: 20px;
+
+
+
+
+
+}
+
+
+
+
+header nav .menu ul{
+
+    visibility: hidden;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    width: 170px;
+    position: absolute;
+    
+    background-color: #fff;
+    z-index: 99;
+    transform: translate(0,20px);
+    transition: all 0.2s;
+
+}
+
+header nav .menu ul:after{
+    bottom: 100%;
+    left: 20%;
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    border-color: rgba(255,255,255,0);
+    border-bottom-color: #fff;
+    border-width: 6px;
+    margin-left: -6px;
+
+}
+
+
+header nav .menu ul li{
+    display: block;
+    float: none;
+    background: none;
+    width: 210px;
+    margin: 0;
+    padding: 0;
+
+}
+
+header nav .menu ul li a{
+
+    font-size: 15px;
+    display: block;
+    color: #797979;
+    background-color: #fff;
+    text-align: left;
+    border-bottom: 1px solid rgb(131 131 131 / 0.2);
+
+}
+
+header nav .menu li:hover > ul{
+
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0,0);
+
+
+}
+
+.menu ul ul{
+
+    left: 220px;
+    top: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(20px,20px);
+    transition: all 0.3s;
+    
+
+}
+
+.menu li>ul ul:hover{
+
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0 0);
+
+}
+
+.responsive-menu{
+
+    text-decoration: none;
+    display: none;
+    width: 100%;
+    padding: 20px 15px;
+    background-color: #374147;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+
+
+}
+
+
+.aman{
+width: 650px;
+position: absolute;
+left: 10%;
+top: 33%;
+transition: translate(-10%,-33%);
+line-height: 60px;
+
+}
+
+.download{
+
+width: 200px;
+height: 45px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: orangered;
+color: #fff;
+border-radius: 4px;
+margin-top: 20px;
+text-decoration: none;
+
+}
+
+.download:hover{
+background-color: #131313;
+transition: all ease 0.4s;
+
+}
+
+
+.aman1{
+
+line-height: 30px !important;
+
+}
+
+.aman h1{
+
+font-size: 40px;
+color: #000;
+
+}
+
+.aman span{
+color: orangered;
+}
+
+.aman p:nth-child(1),.aman .aman1{
+
+color: #6c707c;
+font-size: 20px;
+}
+
+
+.main{
+
+width: 100%;
+height: 100vh;
+background-color: white;
+position: relative;
+background-image: url(https://img.collegepravesh.com/2017/07/BVCOE-Delhi.jpg);  
+
+
+background-repeat: no-repeat;
+background-size: 570px;
+background-position: right bottom;
+
+}
+
+
+
+.wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex; 
+}
+.bg-1{
+    flex: 1;
+    background-color: rgb(180, 243, 175);
+}
+.bg-2{
+    flex: 1;
+    background-color: rgb(163, 236, 240);
+}
+.about-container{
+    width: 85%;
+    min-height: 80vh;
+    position: absolute;
+    background-color: white;
+    box-shadow: 24px 24px 30px #6d8dad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+.image-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container img {
+    width: 585px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.text-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 22px;
+}
+.text-container h1{
+    font-size: 70px;
+    padding: 20px 0px;
+}
+.text-container a{
+    text-decoration: none;
+    padding: 12px;
+    margin: 50px 0px;
+    background-color: rebeccapurple;
+    border: 2px solid transparent;
+    color: white;
+    border-radius: 5px;
+    transition: .3s all ease;
+}
+.text-container a:hover{
+    background-color: transparent;
+    color: black;
+    border: 2px solid rebeccapurple;
+}
+@media screen and (max-width: 1600px){
+    .about-container{
+        width: 90%;
+    }
+    .image-container img{
+        width: 585px;
+        height: 400px;
+    }
+    .text-container h1{
+        font-size: 50px;
+        font-weight: 100;
+    }
+}
+
+
+.container
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.container .card
+{
+   width: 330px;
+   height: 416px;
+   padding: 60px 30px;
+   margin: 20px;
+   background: #f2f3f7;
+   box-shadow: 0.6em 0.6em 1.2em #d2dce9,
+               -0.5em -0.5em 1em #ffffff;
+   border-radius: 20px;
+}
+.container .card .content
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.container .card .content .imgBx
+{
+   width: 180px;
+   height: 180px;
+   border-radius: 50%;
+   position: relative;
+   margin-bottom: 20px;
+   overflow: hidden;
+}
+.container .card .content .imgBx img
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.container .card .content .contentBx h4
+{
+   color: #36187d;
+   font-size: 1.7rem;
+   font-weight: bold;
+   text-align: center;
+   letter-spacing: 1px;
+}
+.container .card .content .contentBx h5
+{
+   color: #6c758f;
+   font-size: 1.2rem;
+   font-weight: bold;
+   text-align: center;
+}
+.container .card .content .sci
+{
+   margin-top: 20px;
+}
+.container .card .content .sci a
+{
+   text-decoration: none;
+   color: #6c758f;
+   font-size: 30px;
+   margin: 10px;
+   transition: color 0.4s;
+}
+.container .card .content .sci a:hover
+{
+   color: #0196e3;
+}
+/*   colors
+        #f2f3f7
+        #d2dce9
+        #36187d
+        #6c758f
+        #0196e3
+ */
+
+
+
+ .services{
+    width: 1300px;
+    padding: 80px 60px;
+    margin: auto;
+
+    
+ }
+
+ .services h1{
+    text-align: center;
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    font-weight: 600;
+ }
+
+ .services h1:after{
+
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 3px;
+    color: #36187d;
+    background-color: #fff;
+    bottom: 0;
+
+
+ }
+
+ .scards{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+ }
+
+
+ .scard{
+    width: calc(34%-22px);
+    background: #f2f2f2;
+    color: #333;
+    padding: 40px 12px;
+    margin: 0 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: 3s;
+    position: relative;
+
+ }
+
+ .sbox i{
+
+    font-size: 36px;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 50%;
+    padding: 15px;
+    transition: 0.5s;
+ }
+
+ .sbox h3{
+
+    font-size: 24px;
+
+ }
+
+ .sbox p{
+    margin: 20px 0;
+ }
+
+ .sbox a{
+
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    background: #333;
+    padding: 5px 15px;
+    border-radius: 15px;
+    transition: 0.5s;
+ }
+
+ .scard:hover .sbox i{
+    background: rgb(0,184,148);
+    color: #fff;
+    border-color: rgb(0,184,148);
+ }
+
+ .scard:after{
+
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+ }
+
+ .scard:hover:after{
+
+    transform: rotate(13deg);
+    background-color: rgb(0,184,148);
+ }
+
+
+
+
+
+ .title{
+    text-align: center;
+    text-transform: capitalize;
+    color: #726a95;
+    margin: 10px 0;
+    position: relative;
+}
+
+.title::after{
+    content: "";
+    position: absolute;
+    width: 20%; height: 2px;
+    background-image: linear-gradient(to left, transparent 5%, #726a95);
+    bottom: -10px; left: 50%;
+    transform: translate(-50%);
+}
+
+.team-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.member{
+    flex: 1 1 250px;
+    margin: 20px;
+    text-align: center;
+    padding: 20px 10px;
+    cursor: pointer;
+    max-width: 300px;
+    transition: all 0.3s;
+}
+
+.member:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: translateY(-20px);
+}
+
+.member img{
+    display: block;
+    width: 150px; height: 150px;
+    object-fit: cover;
+    border:4px solid #726a95;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.member h2{
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #726a95;
+    margin: 15px 0;
+}
+
+.member p{
+    font-size: 15px;
+    color: #838383;
+    line-height: 1.6;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+@media (min-width:768px) and (max-width:992px) {
+
+    .menu ul{
+        top: 37px;
+
+    }
+
+    .menu li a{
+
+        font-size: 16px;
+
+    }
+
+    a.active{
+
+        background-color: #ff652f;
+
+
+
+    }
+}
+
+
+
+
+@media screen and (max-width:992px) {
+
+
+    .menu{
+
+        display:none;
+
+    }
+
+    .responsive-menu{
+
+        display: block;
+
+    }
+
+    nav{
+
+        margin: 0;
+        background: none;
+    }
+
+
+    .menu li{
+
+        display: block;
+        margin: 0;
+
+    }
+
+    .menu li a{
+
+        
+        color: #797979;
+
+    }
+
+
+
+    
+    
+    
+
+        
+    }
+
+
+
+
+
+
+
+        </style>
+
+        </head>
+
+        <body>
+
+
+                </div> -->
+
+
+                <div class="wrapper">
+
+                    <div class="background-container">
+                        <div class="bg-1"></div>
+                        <div class="bg-2"></div>
+                
+                    </div>
+                    <div class="about-container">
+                        
+                        <div class="image-container">
+                            <img src="https://www.raster.in/img/products/blood-bank/blood-bank-management-system.jpg" alt="">
+                            
+                        </div>
+            
+                        <div class="text-container">
+                            <h1>About us</h1>
+                            <p style="font-size: 18;">We at Helping Hands, have created this platform where donor, receiver and hospital blood bank all come together at one portal. In this application receiver can directly come in contact with the donors and volunteers of helping hands within the area if there is any shortage of blood in the blood bank/Hospital.
+                            </p>
+                            <br>
+                            <p>We believe that by automating the existing manual blood bank management system we can bring all the donor,receiver,hospital and blood bank together at one portal and their needs are satisfied.</p>
+                            <br>
+                            
+                            <a href="#">Read More</a>
+                        </div>
+                        
+                    </div>
+                </div>
+        </body>
+        </html>

@@ -1,0 +1,45 @@
+*{
+    background-color: white;
+    font-weight: 400;
+    justify-items: space-between;
+}
+.form-control {
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    justify-content: space-between;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+th, td {
+    border:0.5px solid black;
+    padding: 10px 10px;
+    background-color: rgb(153, 58, 58);
+    padding-left: 15px;
+    padding-right: 70px;
+    color: #fff;
+    border-radius: 5px;
+    
+}
+
+table{
+    padding-right: 10px;
+    padding-top: 90px;
+    padding-left: 290px;
+}
+
+button{
+    color: white;
+    background-color: red; 
+    border: 0.2px solid black; 
+    height: 30px; 
+    border-radius: 5px; 
+    justify-content: space-between;
+    
+}
