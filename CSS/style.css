@@ -90,7 +90,7 @@ border-radius: 9px;
 
 
 .background{
-    background: rgba(0, 0, 0, 0.7)  url('Images/RBC12.jpg');
+    background: rgba(0, 0, 0, 0.7)  url('/Images/RBC12.jpg');
     background-size: cover;
     background-blend-mode: darken;
     
